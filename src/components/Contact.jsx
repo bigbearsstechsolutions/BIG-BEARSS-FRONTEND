@@ -50,6 +50,7 @@ export default function Contact() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    console.log("Submitting form:", form);
     try {
       const res = await fetch("https://big-bearss-portfolio.onrender.com/api/contact", {
         method : "POST",

@@ -30,7 +30,7 @@ export default function Navbar() {
         {/* Logo */}
         <a href="#" className="flex items-center gap-3">
           <div className="w-10 h-10 bg-primary/10 border border-primary/30 rounded-lg flex items-center justify-center">
-            <span className="text-primary font-syne font-black text-lg"><img src="./assets/logo.jpg" alt="" /></span>
+            <span className="text-primary font-syne font-black text-lg">B</span>
           </div>
           <div className="flex flex-col leading-none">
             <span className="font-syne font-extrabold text-primary tracking-tighter text-lg">
