@@ -51,7 +51,7 @@ export function Process() {
 }
 
 // ── TECH STACK MARQUEE ────────────────────────────────────
-const techs = ["REACT", "NODE.JS", "MONGODB", "PYTHON", "AWS", "FLUTTER", "DOCKER", "TAILWIND", "POSTGRES", "n8n", "NEXT.JS", "EXPRESS"];
+const techs = ["REACT", "NODE.JS" , "TYPESCRIPT" , "MONGODB", "PYTHON", "AWS", "FLUTTER", "DOCKER", "TAILWIND", "POSTGRES", "n8n", "NEXT.JS", "EXPRESS"];
 
 export function TechStack() {
   return (
@@ -131,7 +131,7 @@ export function Team() {
 
 // ── TESTIMONIALS ─────────────────────────────────────────
 const reviews = [
-  { name: "Ravi Sharma", company: "TechStartup Delhi", rating: 5, text: "BIG BEARSS delivered our entire web platform in 3 weeks. Exceptional speed and quality. The MERN stack implementation was flawless.", service: "Web Dev" },
+  { name: "Sajid Ali", company: "Warsi food Ghaziabad", rating: 5, text: "BIG BEARSS delivered our entire web platform in 3 weeks. Exceptional speed and quality. The MERN stack implementation was flawless.", service: "Web Dev" },
   { name: "Priya Mehta", company: "Fashion eCommerce", rating: 5, text: "Our Meta Ads ROI went from 1.5x to 4.2x in just 2 months. The digital marketing team knows exactly what they're doing.", service: "Digital Marketing" },
   { name: "Mohammed Warsi", company: "Warsi Food Machinery", rating: 5, text: "Our website looks absolutely premium. Clients from across India are now reaching us through the inquiry form. Best investment.", service: "Web Dev" },
   { name: "Ankit Gupta", company: "Logistics Startup", rating: 5, text: "The n8n automation they built saves our team 20+ hours every week. Incredible ROI in just the first month.", service: "Automation" },

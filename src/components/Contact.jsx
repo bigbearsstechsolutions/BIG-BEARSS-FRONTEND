@@ -226,13 +226,13 @@ export default function Contact() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div className="space-y-1">
                 <label className="section-label text-[10px]">Project Budget</label>
-                <select
+                <select 
                   name="budget"
-                  value={form.budget}
+                  value ={form.budget}
                   onChange={handleChange}
                   className="input-field"
                 >
-                  <option value="">Select budget range...</option>
+                  <option className = "text-black" value="">Select budget range...</option>
                   {budgets.map((b) => (
                     <option key={b} value={b}>{b}</option>
                   ))}

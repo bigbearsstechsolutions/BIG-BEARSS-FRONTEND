@@ -64,7 +64,7 @@ export function Footer() {
             {["LinkedIn", "Instagram", "GitHub", "X"].map((s) => (
               <a
                 key={s}
-                href="#"
+                href="contact"
                 className="w-9 h-9 rounded-full border border-outline-variant flex items-center justify-center text-on-surface-variant hover:border-primary hover:text-primary transition-all text-xs font-bold"
               >
                 {s[0]}

@@ -2,8 +2,8 @@ import { useEffect, useRef } from "react";
 
 const bigStats = [
   { value: 98, suffix: "%", label: "Client Retention Rate" },
-  { value: 250, suffix: "k+", label: "Lines of Code Shipped" },
-  { value: 12, suffix: "M+", label: "Ad Spend Managed (₹)" },
+  { value: 50, suffix: "k+", label: "Lines of Code Shipped" },
+  { value: 3, suffix: "L+", label: "Ad Spend Managed (₹)" },
   { special: "24/7", label: "Support Uptime" },
 ];
 

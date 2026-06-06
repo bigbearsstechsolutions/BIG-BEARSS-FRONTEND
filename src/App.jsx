@@ -33,6 +33,7 @@ export default function App() {
           <Contact />
           <CtaBanner />
         </main>
+        <Maintaincebar />
         <Footer />
       </div>
     </div>
