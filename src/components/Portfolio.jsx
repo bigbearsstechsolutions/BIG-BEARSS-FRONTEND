@@ -1,6 +1,6 @@
 import { useEffect, useRef } from "react";
-import warsi from "../assets/client project ss/warsi.png"
-import hifi from "../assets/client project ss/hihi.png"
+import warsi from "../assets/client-project-ss/warsi.png"
+import hifi from "../assets/client-project-ss/hihi.png"
 
 const projects = [
   {
