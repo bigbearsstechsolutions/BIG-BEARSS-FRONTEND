@@ -110,7 +110,7 @@ export function Footer() {
           © 2024 BIG BEARSS TECH SOLUTIONS. ALL RIGHTS RESERVED.
         </p>
         <p className="font-mono text-xs text-on-surface-variant">
-          ENGINEERED FOR POWER. BUILT FOR SCALE.
+          Build by BIG BEARSS TECH SOLUTIONS.
         </p>
       </div>
     </footer>

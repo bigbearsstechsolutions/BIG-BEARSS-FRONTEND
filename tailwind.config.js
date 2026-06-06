@@ -4,9 +4,9 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "#0b0b0c",
-        surface: "#0a0a0a",
-        "surface-dim": "#131315",
+        background: '#0e0e10',
+        surface: '#fffafa',
+        "surface-dim": "#131315", 
         "surface-container-lowest": "#0e0e10",
         "surface-container-low": "#1c1b1e",
         "surface-container": "#201f22",

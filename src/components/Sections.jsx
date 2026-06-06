@@ -1,4 +1,8 @@
 import { useEffect, useRef, useState } from "react";
+import sakib from "../assets/sakib.jpeg";
+import firoz from "../assets/firozz.png";
+import altaf from "../assets/altaf.png";
+import akib from "../assets/akib.png";
 
 // ── PROCESS ──────────────────────────────────────────────
 const steps = [
@@ -75,10 +79,10 @@ export function TechStack() {
 
 // ── TEAM ─────────────────────────────────────────────────
 const team = [
-  { name: "Mohd Sakib khan", role: "Founder & Lead Dev", initials: "SK", color: "bg-primary/20 text-primary" },
-  { name: "Mohd Firoz", role: "UI/UX Designer", initials: "MF", color: "bg-secondary/20 text-secondary" },
-  { name: "Mohd Altaf", role: "Data anylists", initials: "MA", color: "bg-tertiary/20 text-tertiary" },
-  { name: "unknown", role: "Growth Strategist", initials: "UK", color: "bg-primary/20 text-primary" },
+  { name: "Mohd Sakib Thakur", role: "Founder & Lead Dev", initials: "SK", color: "bg-primary/20 text-primary", img: sakib },
+  { name: "Mohd Firoz khan", role: "UI/UX Designer", initials: "MF", color: "bg-secondary/20 text-secondary", img: firoz },
+  { name: "Altaf Ali", role: "Data anylists", initials: "MA", color: "bg-tertiary/20 text-tertiary" , img : altaf },
+  { name: "Mohd Akib Choudhry", role: "AI/ML Engineer", initials: "UK", color: "bg-primary/20 text-primary", img : akib },
 ];
 
 export function Team() {
@@ -103,12 +107,17 @@ export function Team() {
         {team.map((m) => (
           <div key={m.name} className="group text-center">
             <div className="aspect-square glass rounded-2xl mb-4 overflow-hidden relative flex items-center justify-center">
-              <div className={`w-20 h-20 rounded-full ${m.color} flex items-center justify-center font-syne font-bold text-2xl border border-white/10`}>
-                {m.initials}
-              </div>
+
+              {m.img ? (
+                <img src={m.img} alt={m.name} className="object-cover w-full h-full transition-transform duration-300 group-hover:scale-105" />
+              ) : (
+                <div className={`w-20 h-20 rounded-full ${m.color} flex items-center justify-center font-syne font-bold text-2xl`}>
+                  {m.initials}
+                </div>
+              )}
               {/* Hover overlay */}
               <div className="absolute inset-0 bg-primary/10 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-4">
-                <span className="material-symbols-outlined text-white cursor-pointer hover:scale-125 transition-transform">share</span>
+                <span className="material-symbols-outlined text-white cursor-pointer hover:scale-125 transition-transform"></span>
               </div>
             </div>
             <h4 className="font-syne font-semibold text-lg">{m.name}</h4>
@@ -156,7 +165,7 @@ export function Testimonials() {
         </h2>
         <div className="flex items-center justify-center gap-2 mt-4">
           <div className="flex gap-1">
-            {[1,2,3,4,5].map(s => (
+            {[1, 2, 3, 4, 5].map(s => (
               <span key={s} className="text-yellow-400 text-lg">★</span>
             ))}
           </div>

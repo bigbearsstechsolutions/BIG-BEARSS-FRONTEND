@@ -1,4 +1,6 @@
 import { useEffect, useRef } from "react";
+import warsi from "../assets/client project ss/warsi.png"
+import hifi from "../assets/client project ss/hihi.png"
 
 const projects = [
   {
@@ -7,39 +9,39 @@ const projects = [
     title: "Warsi Food Machinery",
     desc: "Industrial machinery showcase with inquiry system and full responsive design.",
     size: "large", // col-span-2 row-span-2
-    bg: "from-blue-900/60 to-background",
+    img : warsi,
     accent: "text-tertiary",
   },
-  {
-    id: 2,
-    tag: "CRM",
-    title: "Custom CRM",
-    desc: "End-to-end business management system.",
-    size: "small",
-    bg: "from-primary/20 to-background",
-    accent: "text-primary",
-  },
+  // {
+  //   id: 2,
+  //   tag: "CRM",
+  //   title: "Custom CRM",
+  //   desc: "End-to-end business management system.",
+  //   size: "small",
+  //   bg: "from-primary/20 to-background",
+  //   accent: "text-primary",
+  // },
   {
     id: 3,
-    tag: "SaaS",
-    title: "n8n Automation SaaS",
-    desc: "Workflow automation platform deployment.",
-    size: "small",
-    bg: "from-secondary/20 to-background",
+    tag: "Hifi Momo",
+    title: "Food Ordering application",
+    desc: "Mobile app for ordering food from local restaurants.",
+    size: "large",
+    img : hifi,
     accent: "text-secondary",
   },
-  {
-    id: 4,
-    tag: "Marketing",
-    title: "Marketing Automation Suite",
-    desc: "Full-funnel automation with Meta & Google Ads integration.",
-    size: "wide", // col-span-2
-    bg: "from-tertiary/20 to-background",
-    accent: "text-tertiary",
-  },
+  // {
+  //   id: 4,
+  //   tag: "Marketing",
+  //   title: "Marketing Automation Suite",
+  //   desc: "Full-funnel automation with Meta & Google Ads integration.",
+  //   size: "wide", // col-span-2
+  //   bg: "from-tertiary/20 to-background",
+  //   accent: "text-tertiary",
+  // },
 ];
 
-function ProjectCard({ tag, title, desc, size, bg, accent }) {
+function ProjectCard({ tag, title, desc, size, bg, accent, img }) {
   const colSpan =
     size === "large"
       ? "md:col-span-2 md:row-span-2"
@@ -54,9 +56,10 @@ function ProjectCard({ tag, title, desc, size, bg, accent }) {
       }`}
     >
       {/* Gradient BG */}
-      <div
-        className={`absolute inset-0 bg-gradient-to-t ${bg} opacity-80 group-hover:opacity-100 transition-opacity`}
-      />
+      <div className="absolute inset-0">
+        <img src={img} alt={title} className="h-fit w-fit object-cover group-hover:opacity-60 transition-opacity duration-500 group-hover:scale-110 transition-transform"
+ />
+      </div>
 
       {/* Content */}
       <div className="absolute inset-0 flex flex-col justify-end p-6 md:p-8">
@@ -70,10 +73,10 @@ function ProjectCard({ tag, title, desc, size, bg, accent }) {
           {desc}
         </p>
         <a
-          href="#contact"
-          className="mt-4 inline-flex items-center gap-1 text-primary text-sm font-bold opacity-0 group-hover:opacity-100 transition-opacity"
+          onClick={() => alert("Project details coming soon!")}
+          className="mt-4 inline-flex items-center gap-1 text-primary text-sm font-bold opacity-0 group-hover:opacity-100"
         >
-          View Project{" "}
+            View Project{" "}
           <span className="material-symbols-outlined text-base">
             arrow_right_alt
           </span>

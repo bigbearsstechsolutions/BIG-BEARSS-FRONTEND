@@ -62,7 +62,7 @@ export default function Hero() {
           </div>
 
           {/* Headline */}
-          <h1 className="font-syne font-extrabold text-5xl md:text-[72px] leading-[1.05] tracking-tight text-glow">
+          <h1 className="font-syne font-extrabold text-5xl md:text-[72px] leading-[1.05] tracking-tight">
             We Build Digital{" "}
             <span className="text-primary block">Products That Scale</span>
             Your Business
