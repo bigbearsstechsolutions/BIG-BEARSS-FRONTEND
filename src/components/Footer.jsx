@@ -107,7 +107,7 @@ export function Footer() {
       {/* Bottom Bar */}
       <div className="max-w-[1280px] mx-auto px-6 md:px-16 mt-16 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4">
         <p className="font-mono text-xs text-on-surface-variant">
-          © 2024 BIG BEARSS TECH SOLUTIONS. ALL RIGHTS RESERVED.
+          © 2026 BIG BEARSS TECH SOLUTIONS. ALL RIGHTS RESERVED.
         </p>
         <p className="font-mono text-xs text-on-surface-variant">
           Build by BIG BEARSS TECH SOLUTIONS.
