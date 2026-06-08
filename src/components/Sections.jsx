@@ -169,7 +169,7 @@ export function Testimonials() {
               <span key={s} className="text-yellow-400 text-lg">★</span>
             ))}
           </div>
-          <span className="font-mono text-sm text-on-surface-variant">4.9 / 5 · 30+ reviews</span>
+          <span className="font-mono text-sm text-on-surface-variant">4.9 / 5 · 10+ reviews</span>
         </div>
       </div>
 
